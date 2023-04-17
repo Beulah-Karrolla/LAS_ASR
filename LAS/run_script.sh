@@ -1,0 +1,19 @@
+python main.py \
+        --nnodes 1 \
+        --gpus 1 \
+        --nepochs 60 \
+        --epochs-done 0 \
+        --batch-size 512 \
+        --bsz-small 8 \
+        --train-path '/research/nfs_fosler_1/vishal/text/libri/train_clean_100.csv' \
+        --logging-file '/home/karrolla.1/LAS/logs/debug.log' \
+        --save-path '/home/karrolla.1/LAS/saved_models/debug.pth.tar' \
+        --ckpt-path '' \
+        --enc-type 'conf' \
+        --in-dim 960 \
+        --hid-tr 128 \
+        --nhead 4 \
+        --hid-pr 1024 \
+        --lr 0.001 \
+        --clip 5.0 \
+        --dropout 0.25
